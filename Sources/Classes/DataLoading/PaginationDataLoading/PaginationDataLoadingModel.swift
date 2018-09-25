@@ -97,10 +97,10 @@ public final class PaginationDataLoadingModel<Cursor: ResettableRxDataSourceCurs
 
 }
 
-extension PaginationDataLoadingModel {
-
-    convenience init(cursor: Cursor) {
-        self.init(dataSource: cursor) { $0.isEmpty }
-    }
-
-}
+//extension PaginationDataLoadingModel {
+//
+//    convenience init(cursor: Cursor) {
+//        self.init(dataSource: cursor) { $0.isEmpty }
+//    }
+//
+//}
