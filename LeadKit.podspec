@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.author          = "Touch Instinct"
   s.source          = { :git => "https://github.com/TouchInstinct/LeadKit.git", :tag => s.version }
   s.platform        = :ios, '9.0'
+  s.swift_version = '4.2'
 
   s.subspec 'UIColorHex' do |ss|
 
