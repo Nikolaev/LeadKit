@@ -83,7 +83,7 @@ final public class PaginationWrapper<Cursor: ResettableRxDataSourceCursor, Deleg
         self.delegate = delegate
         self.uiDelegate = uiDelegate
 
-        self.paginationViewModel = PaginationDataLoadingModel(cursor: cursor)
+        self.paginationViewModel = PaginationDataLoadingModel(dataSource: cursor, emptyResultChecker: { $0.isEmpty })
 
         bindViewModelStates()
 
